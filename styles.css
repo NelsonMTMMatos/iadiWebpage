@@ -1,0 +1,116 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100%;
+    background-color: aquamarine;
+    padding-left: 200px;
+    padding-right: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pokedex {
+    width: 500px;
+    height: 800px;
+    background-color: #d2222b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border: 10px solid black;
+    border-radius: 5px;
+}
+
+.pokedex-header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-bottom: 10px solid black;
+}
+
+.pk-header-section1 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lens{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    background-color: aqua;
+    border-radius: 50px;
+    border: 5px solid white;
+    outline: black solid 2px;
+}
+
+.pk-header-section2{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.small-lights {
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+
+}
+
+.red-light, .yellow-light, .green-light {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    outline: black solid 2px;
+}
+
+.red-light {
+    background-color: #ed1c24;
+}
+
+.yellow-light {
+    background-color: #ffff00;
+}
+
+.green-light {
+    background-color: #00a651;
+}
+
+.screen-border{
+    width: 90%;
+    height: 450px;
+    margin-top: 50px;
+    background-color: #f1f2f2;
+    border-radius: 15px 15px 15px 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    outline: black solid 2px;
+}
+
+.screen{
+    width: 400px;
+    height: 350px;
+    margin-bottom: 50px;
+    background-color: #59595a;
+    border: 5px solid #bcbdbc;
+}
+
+
