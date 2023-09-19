@@ -73,6 +73,24 @@ body, html {
 
 }
 
+.small-red-light{
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ed1c24;
+}
+
+.medium-red-light{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    outline: black solid 2px;
+}
+
+.medium-red-light{
+    background-color: #ed1c24;
+}
+
 .red-light, .yellow-light, .green-light {
     width: 20px;
     height: 20px;
@@ -105,12 +123,85 @@ body, html {
     outline: black solid 2px;
 }
 
+.screen-upper-section{
+    width: 100%;
+    height: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    gap: 15px;
+}
+
+.left-div, .right-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.left-div {
+    justify-content: end;
+}
+
+.right-div {
+    justify-content: start;
+}
+
 .screen{
     width: 400px;
     height: 350px;
-    margin-bottom: 50px;
     background-color: #59595a;
     border: 5px solid #bcbdbc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.screen-lower-section{
+    width: 100%;
+    height: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.left-lower-div, .right-lower-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.left-lower-div {
+    justify-content: start;
+    margin-left: 50px;
+}
+
+.right-lower-div{
+    justify-content: end;
+}
+
+
+.column-lines{
+    width: 75px;
+    height: 100%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.line{
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+
+
 
 
