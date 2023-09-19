@@ -47,7 +47,7 @@ body, html {
     width: 50px;
     height: 50px;
     margin-left: 20px;
-    background-color: aqua;
+    background-color: #01afef;
     border-radius: 50px;
     border: 5px solid white;
     outline: black solid 2px;
@@ -200,6 +200,63 @@ body, html {
     background-color: black;
     border-radius: 2px;
 }
+
+.pokedex-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokedex-footer-section1{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer-s1-div-fit{
+    width: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer-s1-div{
+    width: 100%;
+    display: flex;
+    margin-left: 20px;
+    justify-content: start;
+    align-items: center;
+    gap: 20px
+}
+
+.circular-black-button{
+    width: 40px;
+    height: 40px;
+    margin-left: 30px;
+    background-color: #59595a;
+    border-radius: 50px;
+    outline: black solid 2px;
+}
+
+.cylinder-red-button, .cylinder-blue-button {
+    width: 75px;
+    height: 12.5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.cylinder-red-button {
+    background-color: #ee1c24;
+}
+
+.cylinder-blue-button {
+    background-color: #01b5a8;
+}
+
 
 
 
