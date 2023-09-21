@@ -47,6 +47,7 @@ const setCurrentPokemon = (pokemon) => {
 
 const setAudio = () => {
     audio.volume = 0.01;
+    audio.play();
 }
 
 const clearScreen = () => {
@@ -139,6 +140,7 @@ closeModal.addEventListener("click", () => {
     modal.style.display = "none";
     content.style.dysplay = "block";
     document.body.style.overflow = "visible";
+    setAudio();
 });
 
 guess.addEventListener("keyup", (e) => {
@@ -165,5 +167,3 @@ skip.addEventListener("click", () => {
 // Initial app load
 updateScoreBoard();
 fetchPokemon();
-setAudio();
-console.log(audio);
