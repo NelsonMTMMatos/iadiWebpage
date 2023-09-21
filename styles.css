@@ -1,43 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-body, html {
+body, html, .modal-div {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
 }
 
-.modal{
-    width: 500px;
-    height: 100px;
+body{
+    overflow: hidden;
+}
+
+body, input, span, button{
+    font-family: 'Press Start 2P', cursive;
+}
+
+li{
+    margin: 5px 0;
+    line-height: 25px;
+}
+
+.content{
+    height: 100%;
+    width: 100%;
+}
+
+.modal-div{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    gap: 20px;
+    background-image: url("./images/wallpaper.jpg");
+    background-size: cover;
 }
 
-.welcome {
-    font-family: 'Press Start 2P', cursive;
+.intro-div, .close-button-div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.close-button {
-    width: 100px;
-    height: 50px;
+.intro-div {
+    padding-top: 100px;
+    justify-content: start;
+}
+
+.intro{
     color: white;
-    font-family: 'Press Start 2P', cursive;
-    background-color: #ee1c24;
-    outline: black solid 2px;
+    font-size: xx-large;
+    z-index: 10;
+}
+
+.close-button-div{
+    padding-bottom: 75px;
+    justify-content: end;
+}
+.close-button-modal {
+    width: 200px;
+    height: 70px;
+    color: black;
+    background-color: #aad8e8;
+    border: 3px solid #7098b1;
+    border-radius: 50px;
+}
+
+.close-button-modal:hover{
+    color: white;
+    background-color: #071f3f;
+
+
 }
 
 .container {
     height: 100%;
-    background-color: aquamarine;
-    padding-left: 200px;
-    padding-right: 200px;
+    background-color: #ddd5f3;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.rules {
+    width: 30%;
+    height: 100%;
+    padding-right: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules-section {
+    margin-bottom: 25px;
+}
+
+.music-section {
+    display: flex;
+    flex-direction: column;
 }
 
 .pokedex {
@@ -282,6 +342,79 @@ body, html {
     background-color: #01b5a8;
 }
 
+
+.pokedex-footer-section2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.guess{
+    width: 250px;
+    height: 20px;
+    padding: 10px;
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 100px;
+    text-align: center;
+}
+
+.skip{
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+.skip:hover{
+    color: #ddd5f3;
+}
+
+.scoreboard {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.points-counter, .streak-counter, .hit-counter {
+    width: 200px;
+    height: 100px;
+    background-color: #002366;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+.points-counter-title, .points-display, .streak-title, .streak-display, .hit-title, .hit-display  {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.points-display, .streak-display, .hit-display {
+    margin-bottom: 15px;
+}
+
+.points-counter-title, .streak-title, .hit-title{
+    align-items: end;
+}
+
+.points, .streak, .hit {
+    color: white;
+}
 
 
 
